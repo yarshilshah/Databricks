@@ -35,6 +35,6 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add .
         git commit -m "Convert .ipynb files to .py"
-        git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/yarshilshah/Databricks.git
+        git push https://x-access-token:${{ secrets.PYCONVERT }}@github.com/yarshilshah/Databricks.git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
